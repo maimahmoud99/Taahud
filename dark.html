@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعاهد</title>
+    <link rel="icon" type="image/png" href="./assets/icons/taahud logo22.svg"
+    class="h-64"" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/libraries.css" />
+    <link href="src/dark.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- IBM Plex Sans Arabic -->
+    <!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <header class="z-[9999]">
+      <nav>
+        <div class="logo">
+          <img src="assets/icons/taahud logo2.svg" alt="تعاهد" />
+        </div>
+        <div class="nav-center">
+          <a href="#" class="link-flip">
+            <span class="top h-6">عنا </span>
+            <span class="bottom h-6"> عنا</span>
+          </a>
+
+          <a href="#" class="link-flip dropdown-toggle">
+            <span class="top h-6">
+              كل الصفحات
+              <i class="fa-solid fa-arrow-down"></i>
+            </span>
+
+            <span class="bottom h-6">
+              كل الصفحات
+              <i class="fa-solid fa-arrow-down angled"></i>
+            </span>
+          </a>
+          <div class="flex flex-row gap-2 items-center">
+            <!-- notification -->
+            <div
+              class="flex justify-center p-2 rounded-lg hover:bg-gray-300/25"
+            >
+              <img
+                src="assets/icons/clarity_notification-line.svg"
+                alt="notification"
+                class="h-6"
+              />
+            </div>
+
+            <!-- wallet -->
+            <div
+              class="flex justify-center p-2 rounded-lg hover:bg-gray-300/25"
+            >
+              <img
+                src="assets/icons/lucide_wallet.svg"
+                alt="notification"
+                class="h-6"
+              />
+            </div>
+          </div>
+          <!-- <a href="#" class="link-flip contact">
+            <span class="top">ابق على تواصل </span>
+            <span class="bottom"> ابق على تواصل </span>
+          </a> -->
+          <!-- تسجيل الدخول -->
+          <!-- <div class="relative">
+  <button
+    id="loginBtn"
+    class="flex items-center gap-2 px-6 py-2
+           border border-gray-500 
+           rounded-full 
+           text-white 
+           text-lg 
+           transition"
+  >
+   <img src="assets/icons/hugeicons_login-circle-01.png">
+    تسجيل الدخول
+   
+  </button>
+
+  <div
+    id="loginDropdown"
+    class=" hidden
+    absolute
+    top-full
+    w-fit
+    z-[1000]
+    bg-white/20
+    rounded-md
+    shadow-[0_4px_30px_rgba(0,0,0,0.1)]
+    backdrop-blur-[5px]
+     mt-2
+ border border-[rgba(255, 255, 255, 0.3)]
+    text-sm"
+  >
+    <a href="#" class="block p-3 hover:bg-white/10 transition w-full ">
+        <div class="flex items-center gap-2">
+<img src="assets/icons/hugeicons_login-circle-01.png"><span class="text-lg"> تسجيل الدخول </span>
+        </div>
+     
+    </a>
+        <a href="#" class="block p-3 hover:bg-white/10 transition w-full text-sm">
+
+        <div class="flex items-center gap-2">
+<img src="assets/icons/lets-icons_user-add-light.svg"><span class="text-lg"> انشاء حساب  </span>
+        </div>
+        </a>
+  </div>
+</div> -->
+
+          <!-- user profile -->
+          <div class="relative">
+            <button
+              id="loginBtn"
+              class="flex items-center gap-2 px-8 py-6 rounded-full text-white text-3xl transition bg-gray-800/95"
+            >
+              M
+            </button>
+
+            <div
+              id="loginDropdown"
+              class="hidden absolute top-full w-60 z-[1000] bg-white/50 rounded-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[5px] mt-3 border border-[rgba(255, 255, 255, 0.3)] text-sm"
+            >
+              <a href="#" class="block p-3 hover:bg-white/10 transition w-full">
+                <div class="flex items-center gap-2">
+                  <img src="assets/icons/user-light.svg" /><span
+                    class="text-lg"
+                  >
+                    الملف الشخصي
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="block p-3 hover:bg-white/10 transition w-full text-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="assets/icons/cuida_dashboard-outline.svg" /><span
+                    class="text-lg"
+                  >
+                    لوحة التحكم
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="block p-3 hover:bg-white/10 transition w-full text-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="assets/icons/solar_settings-linear.svg" /><span
+                    class="text-lg"
+                  >
+                    الاعدادات
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="block p-3 hover:bg-white/10 transition w-full text-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="assets/icons/hugeicons_login-circle-01.png" /><span
+                    class="text-lg text-red-700 font-bold"
+                  >
+                    تسجيل الخروج
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <ul class="dropdown-menu">
+            <li class="text-right pr-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="text-right pr-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >مشاريعي</a
+              >
+            </li>
+            <li class="text-right pr-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="text-right pr-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >تواصل معنا</a
+              >
+            </li>
+
+            <li class="text-right pl-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >الأسئلة الشائعة</a
+              >
+            </li>
+            <li class="text-right pl-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >من نحن</a
+              >
+            </li>
+            <li class="text-right pl-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >شروط الخدمة</a
+              >
+            </li>
+            <li class="text-right pl-4">
+              <a href="#" class="block hover:text-white transition-colors"
+                >سياسة الخصوصية</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      class="mobile-menu z-[99999]"
+      id="mobileMenu"
+      onclick="closeMobileMenu(event)"
+    >
+      <div
+        class="mobile-menu-panel z-[99999]"
+        onclick="event.stopPropagation()"
+      >
+        <div class="mobile-menu-header">
+          <img
+            src="assets/icons/taahud logo2.svg"
+            alt="تعاهد"
+            style="height: 50px"
+          />
+          <button class="mobile-close-btn" onclick="toggleMobileMenu()">
+            ×
+          </button>
+        </div>
+        <div class="mobile-nav-links">
+          <a href="#" onclick="toggleMobileMenu()">عنـا</a>
+          <a href="#" onclick="toggleMobileMenu()">كل الصفحات</a>
+          <a href="#" onclick="toggleMobileMenu()">ابق على تواصل</a>
+          <a href="#" onclick="toggleMobileMenu()">Login →</a>
+        </div>
+      </div>
+    </div>
+    
+<!-- hero section -->
+    <section class="hero">
+      <div class="floating-videos">
+        <div class="video-box v1">
+          <!-- image left backward -->
+          <img src="assets/images/lb.png" alt="" />
+        </div>
+        <!-- image top centered -->
+        <div class="video-box v0">
+          <img src="assets/images/tc.png" alt="" />
+        </div>
+        <!-- image top right -->
+        <div class="video-box v2">
+          <img src="assets/images/vt2.png" alt="" />
+        </div>
+        <!-- image left forward -->
+        <div class="video-box v3">
+          <img src="assets/images/lf.png" alt="" />
+        </div>
+        <!-- img bottom right -->
+        <div class="v4">
+          <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>
+          تعاهد, الحل الأمثل والوسيط الأسهل للربط بينك وبين المقاول أو المهندس
+        </h1>
+        <p>
+          بعد أكثر من 15,000 معاملة ناجحة، أصبحت تعاهُد مرجعًا رقميًا موثوقًا
+          لحلول البناء والعقار الذكي.
+        </p>
+        <a href="#" class="hero-btn contact p-8 w-7xl">
+          <div class="flex items-center gap-2">
+            <div class="link-flip">
+              <span class="top">
+                <i class="fa-solid fa-arrow-down angled"></i>
+              </span>
+              <span class="bottom">
+                <i class="fa-solid fa-arrow-down angled"></i>
+              </span>
+            </div>
+            <span class="text-8xl font-extrabold">ابدأ رحلتك المستقبلية</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="large-banner mb-10">
+      <h2>تعاهد تبني المستقبل</h2>
+    </section>
+    <div class="img4">
+      <img src="assets/images/rbb.png" alt="" />
+    </div>
+
+
+
+    <!-- video  section2 -->
+    <div
+      class="video-wrapper"
+      style="position: relative; width: 100%; height: 1000px; overflow: hidden"
+    >
+      <video
+        src="assets/video/vid.mp4"
+        autoplay
+        muted
+        loop
+        style="width: 100%; height: 80%; object-fit: cover"
+      ></video>
+
+      <!-- Overlay Layer -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 80%;
+          background-color: rgba(31, 30, 28, 0.462);
+        "
+      ></div>
+
+      <!-- paragraph -->
+      <div
+        class="video-text absolute top-[25%] left-[50%] -translate-x-[50%] -translate-y-[80%] lg:text-2xl lg:text-[1.2rem] text-center px-5"
+      >
+        بخبرة سنوات في قطاع البناء، وشبكة منتقاة من المقاولين والمكاتب الهندسية
+        والمورّدين، تربط تعاهُد أصحاب المشاريع بالجهات الأنسب لتنفيذ رؤاهم على
+        أرض الواقع. سواء كنت تبني منزلك الأول أو تطوّر مشروعًا استثماريًا أكبر،
+        تقوم تعاهُد على الشفافية، وتنظيم البيانات، والتفكير التصميمي في رحلة
+        المشروع؛ لتجعل كل خطوة من التخطيط حتى التسليم أوضح وأسهل وأكثر
+        اطمئنانًا.
+      </div>
+
+      <!-- animated line -->
+      <div class="animated-line" style="top: 35%; left: 50%"></div>
+
+      <button
+        class="location-btn absolute left-1/2 -translate-x-1/2 bottom-[30%] z-50"
+      >
+        <span class="link-flip-btn">
+          <span class="top">
+            <img src="assets/icons/gis_location-poi.png" />
+          </span>
+          <span class="bottom">
+            <img src="assets/icons/gis_location-poiBlack.png" />
+          </span>
+        </span>
+        <span class="link-flip-btn">
+          <span class="top">ساحة اكبر المشاريع</span>
+          <span class="bottom">ساحة اكبر المشاريع</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- section 3 -->
+    <div class="flex justify-between items-center self-center flex-col gap-28">
+      <div class="flex justify-between items-center self-center flex-col gap-2">
+        <!-- paragraph -->
+        <p class="text-neutral-500 lg:text-2xl sm:text-lg">
+          انضم إلى أكثر من 7,600 مقاول ومكتب هندسي
+        </p>
+        <p class="text-neutral-500 lg:text-2xl sm:text-lg">
+          يطوّرون أعمالهم ويصلون لفرص مشاريع جديدة عبر تعاهُد
+        </p>
+      </div>
+      <!-- hover titles -->
+      <section
+        class="frst lg:text-7xl font-medium cursor-pointer hover:text-neutral-700 transition relative sm:text-4xl"
+      >
+        <span>ساحة المشاريع</span>
+        <div class="hover-image">
+          <img src="assets/images/img11.png" alt="" />
+        </div>
+        <div class="hover-image2">
+          <img src="assets/images/img12.png" alt="" />
+        </div>
+        <div class="hover-image3">
+          <img src="assets/images/img13.jpg" alt="" />
+        </div>
+      </section>
+
+      <section
+        class="sec lg:text-7xl font-medium cursor-pointer hover:text-neutral-700 transition relative sm:text-4xl"
+      >
+        <span>مدونة تعاهد</span>
+        <div class="hover-image14">
+          <img src="assets/images/img14.png" alt="" />
+        </div>
+        <div class="hover-image16">
+          <img src="assets/images/img16.png" alt="" />
+        </div>
+        <div class="hover-image15">
+          <img src="assets/images/img15.png" alt="" />
+        </div>
+      </section>
+
+      <section
+        class="trd lg:text-7xl font-medium cursor-pointer hover:text-neutral-700 transition relative sm:text-4xl"
+      >
+        <span>تعاهد تبني المستقبل</span>
+        <div class="hover-image17">
+          <img src="assets/images/img17.png" alt="" />
+        </div>
+        <div class="hover-image18">
+          <img src="assets/images/img18.png" alt="" />
+        </div>
+        <div class="hover-image19">
+          <img src="assets/images/img19.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Marquee with Swiper section4 -->
+    <div
+      class="marquee mt-16 mb-15 py-1 border-t-[0.1px] border-b-[0.1px] border-t-[rgba(255,255,255,0.08)] border-b-[rgba(255,255,255,0.08)]"
+    >
+      <div class="swiper marquee-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Health.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Human Resources and Social Development.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Municipal and Rural Affairs.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Public Investment Fund.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Saudi Council of Engineers.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Social Development Bank.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <!-- duplicate -->
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Health.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Human Resources and Social Development.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Municipal and Rural Affairs.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Public Investment Fund.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Saudi Council of Engineers.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Social Development Bank.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <!-- duplicate -->
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Health.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Human Resources and Social Development.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Ministry of Municipal and Rural Affairs.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Public Investment Fund.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Saudi Council of Engineers.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/icons/Social Development Bank.svg"
+              class="h-56 w-auto mx-auto marquee-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section section 5 -->
+    <div class="relative w-full h-screen">
+      <img
+        src="assets/icons/projects.png"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <div
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-auto md:right-14 md:translate-x-0 bg-black/80 text-white rounded-3xl p-6 md:p-10 w-11/12 md:w-[420px] max-w-md shadow-2xl backdrop-blur-lg z-10"
+      >
+        <div id="tags" class="flex gap-3 mb-4"></div>
+
+        <div class="relative w-full h-44 overflow-hidden rounded-xl mb-6">
+          <div
+            id="slider"
+            class="relative w-full h-full transition-transform duration-500"
+          ></div>
+
+          <button
+            onclick="prevSlide()"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 px-4 py-2 text-xl rounded-full"
+          >
+            ›
+          </button>
+          <button
+            onclick="nextSlide()"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 px-4 py-2 text-xl rounded-full"
+          >
+            ‹
+          </button>
+        </div>
+
+        <p id="description" class="text-sm opacity-80 mb-2"></p>
+        <h2
+          id="title"
+          class="text-xl md:text-2xl font-bold leading-relaxed"
+        ></h2>
+      </div>
+    </div>
+
+    <!-- plans section 6 -->
+    <div
+      class="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center text-center"
+    >
+      <h2 class="text-3xl font-bold mb-4">خطط الاشتراك</h2>
+      <p class="text-neutral-400 text-xl mb-12">
+        اختر الخطة التي تناسب احتياجاتك
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8 justify-center w-full">
+        <!-- sanad  -->
+        <div
+          class="rounded-2xl shadow-lg p-6 w-lg flex flex-col justify-between border-2 border-gray-900"
+        >
+          <div>
+            <!-- العنوان -->
+            <h3 class="text-4xl font-bold mb-2 text-white">سند</h3>
+            <p class="text-lg font-light text-neutral-400 mb-4">للافراد</p>
+
+            <!-- السعر -->
+            <p class="text-3xl font-bold mb-6 text-white">
+              <span class="font-light">⃁</span>3900
+              <span class="text-base font-light text-neutral-400">/ شهري</span>
+            </p>
+
+            <!-- المميزات -->
+            <ul
+              class="flex flex-col gap-3 text-lg leading-relaxed text-neutral-200"
+            >
+              <!-- المميزات الأساسية -->
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>وصول لا محدود للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>إسناد فوري للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>تنبيهات فورية للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>دعم فني 24/7</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>لوحة تحكم شاملة</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>صياغة وتوثيق العقود - محدود</span>
+              </li>
+
+              <!-- المميزات الإضافية لسند -->
+              <div id="sanadMoreFeatures" class="hidden flex flex-col gap-3">
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>توقيع رقمي عبر نفاذ - محدود</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ادارة عدد محدود من المشاريع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تقديم عروض اسعار - محدود - تسعير فوري</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>جداول كميات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تتبع مراحل المشروع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ملف رقمي متكامل للمشروع Pdf</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير العلاقة لمتابعة المشروع وتنسيق التواصل</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>خصومات لدى الموردين</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>رصيد مشتريات - بشروط</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>نماذج تقارير زيارة ميدانية جاهزة Pdf</span>
+                </li>
+              </div>
+            </ul>
+
+            <!-- زر عرض المزيد -->
+            <button
+              onclick="toggleSanadFeatures()"
+              class="text-green-500 text-sm mt-4 hover:underline flex items-center gap-1"
+            >
+              <span id="sanadToggleText">عرض المزيد</span>
+              <i id="sanadToggleIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- زر الاشتراك -->
+          <button class="location-btn2 sm:w-48 lg:w-full mt-7">
+            <div class="link-flip2">
+              <span class="top">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+              <span class="bottom">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+            </div>
+            <span href="#" class="link-flip-btn">
+              <span class="top">اشترك الآن</span>
+              <span class="bottom">اشترك الآن</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- nemo -->
+        <div
+          class="rounded-2xl shadow-lg p-2 w-2xl flex flex-col justify-between border-2 border-gray-400"
+          style="background-color: #4f525637"
+        >
+          <div>
+            <!-- العنوان -->
+            <h3 class="text-5xl font-bold mb-2 text-green-500">نمو</h3>
+            <p class="text-xl font-light text-neutral-400 mb-4">للأعمال</p>
+
+            <!-- السعر -->
+            <p class="text-4xl font-bold mb-6">
+              <span class="font-light">⃁</span>6900
+              <span class="text-base font-light text-neutral-400">/ شهري</span>
+            </p>
+
+            <!-- المميزات -->
+            <ul class="flex flex-col gap-3 text-lg leading-relaxed">
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>وصول لا محدود ل 10 مشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>تسجيل المشاريع الحالية</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>ضمان تنفيذ للعملاء (ذهبي)</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>لوحة تحكم شاملة</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>إدارة أكبر عدد من المشاريع</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-1.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>أسعار لامحدود + تسعير فوري</span>
+              </li>
+
+              <!-- المميزات الإضافية لنمو -->
+              <div id="proMoreFeatures" class="hidden flex flex-col gap-3">
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>جداول كميات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تتبع مراحل المشروع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ملف رقمي متكامل للمشروع (PDF)</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير علاقة لمتابعة المشروع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>وصول لفرص مشاريع لدى الشركات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير مالي + محاسبة وتقارير وفواتير</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير قانوني</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير موارد بشرية</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مسؤول عمليات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ملف الأعمال الرقمي</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ساحة المشاريع الخاصة</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تقارير المشاريع الكبرى</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>لوحة الطلبات + لوحة الاعتمادات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>العروض العقارية</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>وصول إلى ساحة الصيانة بعد التسليم</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>نماذج تقارير زيارة ميدانية PDF</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-1.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>نموذج التعميد</span>
+                </li>
+              </div>
+            </ul>
+
+            <!-- زر عرض المزيد -->
+            <button
+              onclick="toggleProFeatures()"
+              class="text-green-500 text-sm mt-4 hover:underline flex items-center gap-1"
+            >
+              <span id="proToggleText">عرض المزيد</span>
+              <i id="proToggleIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- زر الاشتراك -->
+          <button class="location-btn2 sm:w-48 lg:w-full mt-7">
+            <div class="link-flip2">
+              <span class="top">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+              <span class="bottom">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+            </div>
+            <span href="#" class="link-flip-btn">
+              <span class="top">اشترك الآن</span>
+              <span class="bottom">اشترك الآن</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- AHD (عهد) -->
+        <div
+          class="rounded-2xl shadow-lg p-6 w-lg flex flex-col justify-between border-2 border-gray-900"
+        >
+          <div>
+            <!-- العنوان -->
+            <h3 class="text-4xl font-bold mb-2 text-white">عهد</h3>
+            <p class="text-lg font-light text-neutral-400 mb-4">
+              حلول متقدمة للشركات والمؤسسات
+            </p>
+
+            <!-- السعر -->
+            <p class="text-3xl font-bold mb-6 text-white">
+              <span class="font-light">⃁</span>9900
+              <span class="text-base font-light text-neutral-400">/ شهري</span>
+            </p>
+
+            <!-- المميزات -->
+            <ul
+              class="flex flex-col gap-3 text-lg leading-relaxed text-neutral-200"
+            >
+              <!-- المميزات الأساسية -->
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>وصول لا محدود للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>تسجيل المشاريع الحالية.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>إسناد فوري للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>تنبيهات فورية للمشاريع.</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>ضمان تنفيذ للعملاء (بلاتيني)</span>
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="assets/icons/tdesign_task-checked-2.png"
+                  class="w-5 h-5 mt-1"
+                />
+                <span>دعم فني 24/7</span>
+              </li>
+
+              <!-- المميزات الإضافية لعهد -->
+              <div id="ahdMoreFeatures" class="hidden flex flex-col gap-3">
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>لوحة تحكم شاملة</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>صياغة وتوثيق العقود - لا محدود</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>توقيع رقمي عبر نفاذ - لا محدود</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>إدارة اكبر عدد من المشاريع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>عروض اسعار - لامحدود - تسعير</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>جداول كميات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تتبع مراحل المشروع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>وصول لفرص مشاريع لدى الشركات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>رصيد مشتريات - بشروط</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير العلاقة لمتابعة المشروع</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span
+                    >مدير مالي: إدارة المحاسبة، الدفعات، المصروفات، وإصدار
+                    التقارير والفواتير داخل المنصة.</span
+                  >
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير قانوني</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مدير موارد بشرية</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>مسؤول عمليات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ملف الأعمال الرقمي</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>ساحة المشاريع الخاصة</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>تقارير المشاريع الكبرى</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>لوحة الطلبات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>لوحة الاعتمادات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>العروض العقارية</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>وصول الى ساحة الصيانة</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>نماذج تقارير زيارة ميدانية جاهزة Pdf</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>خدمة تدقيق المخططات</span>
+                </li>
+
+                <li class="flex items-start gap-2">
+                  <img
+                    src="assets/icons/tdesign_task-checked-2.png"
+                    class="w-5 h-5 mt-1"
+                  />
+                  <span>نموذج التعميد</span>
+                </li>
+              </div>
+            </ul>
+
+            <!-- زر عرض المزيد -->
+            <button
+              onclick="toggleAhdFeatures()"
+              class="text-green-500 text-sm mt-4 hover:underline flex items-center gap-1"
+            >
+              <span id="ahdToggleText">عرض المزيد</span>
+              <i id="ahdToggleIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <!-- زر الاشتراك -->
+          <button class="location-btn2 sm:w-48 lg:w-full mt-7">
+            <div class="link-flip2">
+              <span class="top">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+              <span class="bottom">
+                <i class="fa-solid fa-arrow-down angled2"></i>
+              </span>
+            </div>
+            <span href="#" class="link-flip-btn">
+              <span class="top">اشترك الآن</span>
+              <span class="bottom">اشترك الآن</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--best projects section7  -->
+    <section class="hero sm:mt-0 flex items-center justify-center">
+      <div class="floating-videos sm:m-0">
+        <!-- image top centered -->
+        <div class="video-box v0">
+          <img src="assets/images/tc.png" alt="" />
+        </div>
+        <!-- image top right -->
+        <div class="video-box v2">
+          <img src="assets/images/vt2.png" alt="" />
+        </div>
+        <!-- image left forward -->
+        <div class="video-box v3">
+          <img src="assets/images/lf.png" alt="" />
+        </div>
+      </div>
+
+      <div class="hero-content flex flex-col items-center justify-center">
+        <section class="large-banner">
+          <span> مشاريع تعاهد</span>
+        </section>
+        <p>
+          بفضل سنوات من الخبرة وشبكة من العقارات المختارة بعناية، نربط الناس
+          بعقارات ملهمة. سواء كنت تشتري شقتك الأولى أو تستثمر في مستقبل المدينة،
+          فإن نهجنا قائم على الشفافية والتصميم المبتكر والاهتمام.
+        </p>
+        <button class="location-btn">
+          <div class="link-flip2">
+            <span class="top">
+              <i class="fa-solid fa-arrow-down angled2"></i>
+            </span>
+            <span class="bottom">
+              <i class="fa-solid fa-arrow-down angled2"></i>
+            </span>
+          </div>
+          <span href="#" class="link-flip-btn">
+            <span class="top">افضل المشاريع </span>
+            <span class="bottom"> افضل المشاريع</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- sticky  section 8-->
+    <section class="lg:mt-5 sm:mt-0 z-0">
+      <div
+        class="scrollable-sticky sticky-is-enabled boxed-section mt-50 z-800"
+      >
+        <!-- sticky-card 1 -->
+        <div class="sticky-card sticky-top flex justify-center pt-24">
+          <div class="col-12 col-md-12 w-full p-5 flex justify-center">
+            <div class="sticky-card card-img position-relative">
+              <!-- image-->
+              <img
+                src="assets/images/banar1.png"
+                loading="lazy"
+                alt="img"
+                class="w-full h-screen object-cover rounded-xl"
+                style="width: max-content"
+              />
+
+              <!-- Overlay-->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center md:gap-12 px-4"
+              >
+                <!-- title -->
+                <a
+                  href="#"
+                  class="link-flip-bnr text-2xl md:text-4xl text-center"
+                >
+                  <span class="top">مجتمع سكني متكامل</span>
+                  <span class="bottom">مجتمع سكني متكامل </span>
+                </a>
+
+                <div class="flex flex-col items-center">
+                  <!-- animated line -->
+                  <div class="animated-line"></div>
+
+                  <!-- paragraphs -->
+                  <div
+                    class="pra text-center max-w-2xl space-y-2 lg:mt-40 md:mt-40 sm:mt-40"
+                  >
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      مشروع سكني حديث في قلب الرياض، مصمم لتوفير بيئة راقية تجمع
+                      بين الخصوصية والراحة
+                    </p>
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      يوفر أسلوب حياة متوازن ومثالي للعائلات.
+                    </p>
+                  </div>
+                </div>
+                <!-- button -->
+                <button class="location-btn mb-8 md:mt-8 sm:mt-2">
+                  <div class="link-flip2">
+                    <span class="top">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                    <span class="bottom">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                  </div>
+                  <span class="link-flip-btn">
+                    <span class="top">تفاصيل المشروع</span>
+                    <span class="bottom">تفاصيل المشروع</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky-card 2 -->
+        <div class="sticky-card sticky-top flex justify-center pt-24">
+          <div class="col-12 col-md-12 w-full p-5 flex justify-center">
+            <div class="sticky-card card-img position-relative">
+              <!-- image -->
+              <img
+                src="assets/images/banar2.png"
+                loading="lazy"
+                alt="img"
+                class="w-full h-screen object-cover rounded-xl"
+              />
+
+              <!-- Overlay -->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center md:gap-12 px-4"
+              >
+                <!-- title -->
+                <a
+                  href="#"
+                  class="link-flip-bnr text-2xl md:text-4xl text-center"
+                >
+                  <span class="top">فيلات موديرن فاخرة</span>
+                  <span class="bottom">فيلات موديرن فاخرة</span>
+                </a>
+
+                <div class="flex flex-col items-center">
+                  <!-- line animated -->
+                  <div class="animated-line"></div>
+
+                  <!-- paragraphs -->
+                  <div
+                    class="pra text-center max-w-2xl space-y-2 lg:mt-40 md:mt-40 sm:mt-40"
+                  >
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      الفلل بتمزج بين التصميم المعاصر والراحة، وتوفر خصوصية تامة
+                      ومساحات خارجية مثالية
+                    </p>
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      يوفر أسلوب حياة متوازن ومثالي للعائلات.
+                    </p>
+                  </div>
+                </div>
+                <!-- button -->
+                <button class="location-btn mb-8 md:mt-8 sm:mt-2">
+                  <div class="link-flip2">
+                    <span class="top">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                    <span class="bottom">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                  </div>
+                  <span class="link-flip-btn">
+                    <span class="top">تفاصيل المشروع</span>
+                    <span class="bottom">تفاصيل المشروع</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky-card 3 -->
+        <div class="sticky-card sticky-top flex justify-center pt-24">
+          <div class="col-12 col-md-12 w-full p-5 flex justify-center">
+            <div class="sticky-card card-img position-relative">
+              <!-- image -->
+              <img
+                src="assets/images/banar3.png"
+                loading="lazy"
+                alt="img"
+                class="w-full h-screen object-cover rounded-xl"
+              />
+
+              <!-- Overlay -->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center md:gap-12 px-4"
+              >
+                <!-- title -->
+                <a
+                  href="#"
+                  class="link-flip-bnr text-2xl md:text-4xl text-center"
+                >
+                  <span class="top">معيشة مصممة بعناية </span>
+                  <span class="bottom">معيشة مصممة بعناية </span>
+                </a>
+
+                <div class="flex flex-col items-center">
+                  <div class="animated-line"></div>
+
+                  <div
+                    class="pra text-center max-w-2xl space-y-2 lg:mt-40 md:mt-40 sm:mt-40"
+                  >
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      مزيج متناعم من الحرفية والوظائف العملية.كل زاوية تعكس
+                      تصميمًا خالدًا انسيابي
+                    </p>
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      مع التركيز على الفخامة والتميز
+                    </p>
+                  </div>
+                </div>
+                <!-- button -->
+                <button class="location-btn mb-8 md:mt-8 sm:mt-2">
+                  <div class="link-flip2">
+                    <span class="top">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                    <span class="bottom">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                  </div>
+                  <span class="link-flip-btn">
+                    <span class="top">تفاصيل المشروع</span>
+                    <span class="bottom">تفاصيل المشروع</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky-card 4 -->
+        <div class="sticky-card sticky-top flex justify-center pt-24">
+          <div class="col-12 col-md-12 w-full p-5 flex justify-center">
+            <div class="sticky-card card-img position-relative">
+              <!-- image -->
+              <img
+                src="assets/images/banar4.png"
+                loading="lazy"
+                alt="img"
+                class="w-full h-screen object-cover rounded-xl"
+              />
+
+              <!-- Overlay -->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center md:gap-12 px-4"
+              >
+                <!-- title -->
+                <a
+                  href="#"
+                  class="link-flip-bnr text-2xl md:text-4xl text-center"
+                >
+                  <span class="top"> التصاميم الجديدة الفاخرة </span>
+                  <span class="bottom"> التصاميم الجديدة الفاخرة </span>
+                </a>
+
+                <div class="flex flex-col items-center">
+                  <div class="animated-line"></div>
+
+                  <!-- paragraphs -->
+                  <div
+                    class="pra text-center max-w-2xl space-y-2 lg:mt-40 md:mt-40 sm:mt-40"
+                  >
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      مزيج متناعم من الحرفية والوظائف العملية.كل زاوية تعكس
+                      تصميمًا خالدًا انسيابي
+                    </p>
+                    <p class="text-neutral-400 text-base md:text-xl">
+                      مع التركيز على الفخامة والتميز
+                    </p>
+                  </div>
+                </div>
+                <!-- button -->
+                <button class="location-btn mb-8 md:mt-8 sm:mt-2">
+                  <div class="link-flip2">
+                    <span class="top">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                    <span class="bottom">
+                      <i class="fa-solid fa-arrow-down angled2"></i>
+                    </span>
+                  </div>
+                  <span class="link-flip-btn">
+                    <span class="top">تفاصيل المشروع</span>
+                    <span class="bottom">تفاصيل المشروع</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form  section 9-->
+    <div class="signup-container">
+      <div class="logo">
+        <img
+          src="assets/icons/taahud logo2.svg"
+          alt="تعاهد"
+          class="w-96 h-50"
+        />
+        <p class="subtitle text-center leading-relaxed text-md">
+          انضم إلى أكثر من 1000 شريك راضٍ يثقون في تعاهد. لنبني معًا شيئًا
+          استثنائيًا.
+        </p>
+      </div>
+      <div>
+        <div class="animated-line h-24 mt-1"></div>
+      </div>
+      <h2 class="text-4xl font-extrabold align-content-center mt-32">
+        هل تفكر في الاستثمار؟
+      </h2>
+      <form class="signup-form">
+        <div class="form-row grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
+          <div class="flex flex-col">
+            <label class="mb-1 font-medium text-xl mt-5">*الاسم الأول</label>
+            <input type="text" placeholder="مي" required class="input p-8" />
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-1 font-medium text-xl mt-5">*اسم العائلة</label>
+            <input type="text" placeholder="محمود" required class="input p-8" />
+          </div>
+        </div>
+        <label class="mb-1 font-medium text-xl mt-2">*بريد إلكتروني</label>
+        <div class="email-input flex items-center mt-1">
+          <input
+            type="email"
+            placeholder="maimahmud47@gmail.com"
+            required
+            class="input flex-1 p-8"
+          />
+          <button type="submit" class="submit-btn">→</button>
+        </div>
+      </form>
+
+      <p class="footer-text text-center text-gray-400 mt-2">
+        سيتصل بك أحد الممثلين خلال 48 ساعة
+      </p>
+    </div>
+
+   <!--footer  section 10-->
+    <footer class="py-16 text-gray-700 font-sans">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row flex-wrap justify-between gap-12 sm:gap-12 items-center sm:items-start text-center sm:text-right"
+      >
+        <!-- logo -->
+        <div class="flex flex-col justify-center">
+          <img src="assets/icons/taahud logo2.svg" class="w-60" />
+          <p class="text-xl">حل واحد لكل خطوات مشروعك من البداية للنهاية</p>
+        </div>
+
+        <div>
+          <h3 class="text-gray-50 font-bold text-2xl mb-4">المنصة</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >مشاريعي</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >لوحة التحكم</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-gray-50 font-bold text-2xl mb-4">الدعم</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >تواصل معنا</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >الأسئلة الشائعة</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-gray-50 font-bold text-2xl mb-4">الشركة</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >شروط الخدمة</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors text-xl"
+                >سياسة الخصوصية</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 flex justify-center gap-8">
+        <a
+          href="https://www.linkedin.com/posts/taahud_aesaehaepaevaex-aesaehaepaevaexabraevaeyabraepaesaevaes-activity-7377023087386664960-Vyj-?utm_source=share&utm_medium=member_ios&rcm=ACoAAEAqPigBqJg9agh-TkN09kGuXh2Gh8dLI6Q"
+          class="text-gray-700 text-2xl hover:text-white transition-colors"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/people/Taahud-Sa/pfbid07uThqi5zKqDFXtkyWRBBva8B5jH1h64whttUFp3DgVSyrZKrKvAVd5764feso5w6l/"
+          class="text-gray-700 text-2xl hover:text-white transition-colors"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://x.com/taahud_sa?s=11"
+          class="text-gray-700 text-2xl hover:text-white transition-colors"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/taahud_sa/?igsh=MTNiMzVjODZ5cTc2aA%3D%3D"
+          class="text-gray-700 text-2xl hover:text-white transition-colors"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+
+      <div class="text-center text-gray-500 text-lg mt-8">
+        <p>© Taahud 2025 جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/dark.js"></script>
+  </body>
+</html>
